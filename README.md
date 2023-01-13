@@ -1,4 +1,4 @@
-# S4---Assignment-Part1
+# S3---Assignment-Part1
 
 PART 1: Rewrite the whole excel sheet showing backpropagation. Explain each major step, and write it on Github. 
 1. Use exactly the same values for all variables as used in the class
