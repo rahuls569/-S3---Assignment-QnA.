@@ -49,39 +49,9 @@ class Net(nn.Module):
   In the above network, dropout is used after the second layer, fourth layer, and sixth layer. Batch normalization is used after each convolution layer except the last convolution layer. After the seventh layer, Global average pooling is used. after that, the fully connected layer is used.
   
   In this network, less than 20k parameters are used
-  ----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1            [-1, 8, 28, 28]              80
-       BatchNorm2d-2            [-1, 8, 28, 28]              16
-            Conv2d-3           [-1, 16, 28, 28]           1,168
-       BatchNorm2d-4           [-1, 16, 28, 28]              32
-         MaxPool2d-5           [-1, 16, 14, 14]               0
-           Dropout-6           [-1, 16, 14, 14]               0
-            Conv2d-7           [-1, 16, 14, 14]           2,320
-       BatchNorm2d-8           [-1, 16, 14, 14]              32
-            Conv2d-9           [-1, 32, 14, 14]           4,640
-      BatchNorm2d-10           [-1, 32, 14, 14]              64
-        MaxPool2d-11             [-1, 32, 7, 7]               0
-          Dropout-12             [-1, 32, 7, 7]               0
-           Conv2d-13             [-1, 64, 9, 9]           2,112
-      BatchNorm2d-14             [-1, 64, 9, 9]             128
-           Conv2d-15           [-1, 64, 11, 11]           4,160
-      BatchNorm2d-16           [-1, 64, 11, 11]             128
-          Dropout-17           [-1, 64, 11, 11]               0
-           Conv2d-18           [-1, 10, 13, 13]             650
-AdaptiveAvgPool2d-19             [-1, 10, 1, 1]               0
-           Linear-20                   [-1, 10]             110
-================================================================
-Total params: 15,640
-Trainable params: 15,640
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.77
-Params size (MB): 0.06
-Estimated Total Size (MB): 0.83
   
+![image](https://user-images.githubusercontent.com/79099957/212399165-5f26d615-ebee-4446-b644-4489767c53fd.png)
+
  For validation accuracy, 19 epoch is used. The accuracy is given as
  loss=0.33131274580955505 batch_id=468: 100%|██████████| 469/469 [01:52<00:00,  4.16it/s]
 
